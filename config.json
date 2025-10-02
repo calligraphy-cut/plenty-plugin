@@ -1,0 +1,34 @@
+[
+    {
+        "tab": "Settings",
+        "key": "webhook.url",
+        "label": "Webhook URL",
+        "type": "text",
+        "default": "",
+        "required": true
+    },
+    {
+        "tab": "Settings",
+        "key": "webhook.secret",
+        "label": "Webhook Secret",
+        "type": "text",
+        "default": "",
+        "required": false
+    },
+    {
+        "tab": "Settings",
+        "key": "webhook.timeout",
+        "label": "Webhook Timeout (seconds)",
+        "type": "text",
+        "default": "30",
+        "required": false
+    },
+    {
+        "tab": "Settings",
+        "key": "webhook.enabled",
+        "label": "Enable Webhook",
+        "type": "checkbox",
+        "default": true,
+        "required": false
+    }
+]

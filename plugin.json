@@ -1,0 +1,21 @@
+{
+    "name": "PaymentWebhookNotifier",
+    "namespace": "PaymentWebhookNotifier",
+    "type": "general",
+    "version": "1.0.0",
+    "license": "AGPL-3.0",
+    "pluginIcon": "icon_plugin_xs.png",
+    "price": 0.00,
+    "description": "Listens to order payment events and calls a configured webhook URL",
+    "shortDescription": {
+        "de": "Sendet Webhook-Benachrichtigungen bei Zahlungszuordnung",
+        "en": "Sends webhook notifications on payment assignment"
+    },
+    "categories": [
+        "3519"
+    ],
+    "author": "Custom",
+    "authorIcon": "icon_author_xs.png",
+    "require": [],
+    "serviceProvider": "PaymentWebhookNotifier\\Providers\\PaymentWebhookServiceProvider"
+}
