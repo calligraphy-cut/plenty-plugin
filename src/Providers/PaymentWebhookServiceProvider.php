@@ -17,7 +17,7 @@ class PaymentWebhookServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->getApplication()->register(PaymentWebhookServiceProvider::class);
+        // No additional registration needed here
     }
 
     /**

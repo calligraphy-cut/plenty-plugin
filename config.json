@@ -1,11 +1,27 @@
 [
     {
         "tab": "Settings",
-        "key": "webhook.url",
-        "label": "Webhook URL",
+        "key": "webhook.url1",
+        "label": "Webhook URL 1",
         "type": "text",
         "default": "",
         "required": true
+    },
+    {
+        "tab": "Settings",
+        "key": "webhook.url2",
+        "label": "Webhook URL 2 (Optional)",
+        "type": "text",
+        "default": "",
+        "required": false
+    },
+    {
+        "tab": "Settings",
+        "key": "webhook.url3",
+        "label": "Webhook URL 3 (Optional)",
+        "type": "text",
+        "default": "",
+        "required": false
     },
     {
         "tab": "Settings",

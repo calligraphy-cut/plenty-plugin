@@ -4,9 +4,9 @@ A simple plentymarkets plugin that sends webhook notifications with order IDs.
 
 ## Features
 
-- Sends HTTP POST webhook with order ID to a configured URL
+- Sends HTTP POST webhook with order ID to up to 3 configured URLs
 - Triggered via event procedures (you control when it fires)
-- Configurable webhook URL and timeout
+- Configurable webhook URLs (URL 2 and 3 are optional) and timeout
 - Enable/disable webhook functionality
 - Comprehensive logging for debugging
 
@@ -14,16 +14,20 @@ A simple plentymarkets plugin that sends webhook notifications with order IDs.
 
 1. Upload the plugin to your plentymarkets system
 2. Deploy the plugin in the plugin set
-3. Configure the webhook URL in the plugin settings
+3. Configure at least one webhook URL in the plugin settings
 
 ## Configuration
 
 Configure the plugin in **Plugins → Plugin overview → PaymentWebhookNotifier → Configuration**:
 
-- **Webhook URL**: The endpoint URL where webhook notifications will be sent (required)
+- **Webhook URL 1**: The primary endpoint URL where webhook notifications will be sent (required)
+- **Webhook URL 2**: Optional secondary endpoint URL (optional)
+- **Webhook URL 3**: Optional third endpoint URL (optional)
 - **Webhook Secret**: A secret key sent with each webhook for verification (optional)
 - **Webhook Timeout**: Maximum time in seconds to wait for webhook response (default: 30)
 - **Enable Webhook**: Toggle to enable or disable webhook notifications
+
+The plugin will send the webhook to all configured URLs. If any URL fails, it will continue sending to the remaining URLs.
 
 ## Setting Up Event Procedures
 
